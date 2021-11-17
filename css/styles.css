@@ -94,6 +94,7 @@ body {
 }
 
 .image {
+  display: block; 
   object-fit: cover;
 }
 
@@ -429,6 +430,10 @@ box-sizing: border-box;
 .portfolio-repeater-item .image {  
   width: 370px;
   height:  294px;  
+}
+
+.portfolio-repeater-item-part {
+  display: flow-root;
 }
 
 .portfolio .h3{
