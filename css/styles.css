@@ -102,6 +102,13 @@ body {
   object-fit: cover;
 }
 
+.h1,
+.h2,
+.h3{
+  margin: 0;
+  padding: 0;
+}
+
 /* Header block */
 .header {  
 background-color: var(--main-bg-cl);
@@ -250,6 +257,11 @@ background-color: var(--main-bg-cl);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: var(--third-txt-cl);
+}
+
+.activity {
+  padding-bottom: 94px;
 }
 
 .activity-list-item {
@@ -320,12 +332,14 @@ background-color: var(--main-bg-cl);
 }
 
 .team-title {  
+  margin: 0;
   font-weight: 500;
   font-size: 16px;   
   margin-bottom: 10px;
 }
 
 .team .text {  
+  margin: 0;
   font-weight: 400;
   font-size: 16px;  
   color: #757575;  
@@ -446,13 +460,6 @@ box-sizing: border-box;
   margin-bottom: 30px;
 }
 
-.portfolio-repeater-item-part {
-  border-top: 0px solid #EEEEEE;
-  border-bottom: 2px solid #EEEEEE;
-  border-left: 2px solid #EEEEEE;
-  border-right: 2px solid #EEEEEE;
-}
-
 .portfolio-repeater-item:nth-child(3n+3) {  
   margin-right: 0px;    
 }
@@ -461,19 +468,23 @@ box-sizing: border-box;
   margin-bottom: 0px;    
 }
 
+.portfolio-repeater-item-part {
+  padding: 20px 24px;
+  border-top: 0px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
+  border-left: 2px solid #EEEEEE;
+  border-right: 2px solid #EEEEEE;
+}
+
 .portfolio-repeater-item .image {  
   width: 370px;
   height:  294px;  
 }
 
-.portfolio-repeater-item-part {
-  display: flow-root;
-}
-
 .portfolio .h2{
-  margin: 0;
-  margin-top: 20px;
-  padding: 0px 24px;
+  margin: 0;  
+  padding: 0px;
+  margin-bottom: 4px;
   font-weight: bold;
 font-size: 18px;
 line-height: 2;
@@ -481,9 +492,8 @@ letter-spacing: 0.06em;
 }
 
 .portfolio .text{
-  margin: 0;
-  margin-top: 4px;
-  padding: 0px 24px 20px 24px;
+  margin: 0;  
+  padding: 0px;
   font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
