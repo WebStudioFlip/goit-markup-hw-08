@@ -25,8 +25,8 @@
 
   --linear-gradient: linear-gradient(
     180deg,
-    #171a24 0%,
-    rgba(23, 26, 36, 0.2) 100%
+    rgba(47, 48, 58, 0.2) 0%,     
+     rgba(47, 48, 58, 0.4) 100%
   );
 
   /* others */
@@ -230,13 +230,17 @@ background-color: var(--main-bg-cl);
   background: #FFFFFF; 
 }
 
-.shapka {        
+.shapka {      
+  background-image: var(--linear-gradient),url(../images/activity/Img.jpg);   
+  
+  background-size: contain; 
   background-color: var(--third-bg-cl);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
 .shapka-container {
+ 
   text-align: center;
 }
 
