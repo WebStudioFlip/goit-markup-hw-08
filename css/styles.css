@@ -82,6 +82,9 @@ body {
   font-size: 14px;
   text-decoration: none;
   color: var(--main-txt-cl);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -204,6 +207,9 @@ background-color: var(--main-bg-cl);
 .header-contact-item .link{   
   color: var(--third-txt-cl); 
   margin-left: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-item:hover .link,
@@ -214,12 +220,14 @@ background-color: var(--main-bg-cl);
 
 .header-contact-item .svg{   
   fill: var(--third-txt-cl); 
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
 .header-contact-item:hover .svg,
-.header-contact-item:hover .svg,
-.header-contact-item:hover .svg {  
+.header-contact-item:focus .svg {  
   fill: var(--secondary-txt-cl);
 }
 
@@ -269,6 +277,9 @@ background-color: var(--main-bg-cl);
   color: var(--main-bg-cl);
   background-color: var(--secondary-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .shapka .btn:hover,
@@ -395,15 +406,27 @@ background-color: var(--main-bg-cl);
   fill:  #AFB1B8;
   width: 44px;
   height: 44px;  
-  padding: 12px;   
+  padding: 12px;  
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.team .item {    
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+  
 }
 
 .team .item:hover ,
-.team .item:focus {    
+.team .item:focus {   
  
   background-color: var(--secondary-txt-cl);
-  box-sizing: border-box;
-  border-radius: 50%;
+  
 }
 
 .team .item:hover .svg,
@@ -421,12 +444,21 @@ background-color: var(--main-bg-cl);
   border: 1px solid #AFB1B8;  
 box-sizing: border-box;
 border-radius: 4px;
+transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .clients .box:hover,
 .clients .box:focus{  
   border: 1px solid var(--secondary-txt-cl);  
 }
+.clients .box .svg{  
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .clients .box:hover .svg,
 .clients .box:focus .svg{  
@@ -501,7 +533,10 @@ border-radius: 4px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);    
+  color: rgba(255, 255, 255, 0.6); 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .footer-contact-item .link:hover,
@@ -524,6 +559,9 @@ border-radius: 4px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1); 
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social .item:hover,
@@ -575,6 +613,9 @@ margin-bottom: 50px;
   background-color: var(--secondary-bg-cl);  
   border-width: 0px;
   border-radius: var(--border-radius);
+  transition-property: background-color, color, box-shadow ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -595,6 +636,9 @@ margin-bottom: 50px;
 box-sizing: border-box;
   margin-right: 30px;  
   margin-bottom: 30px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-repeater-item:hover,
