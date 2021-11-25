@@ -28,17 +28,19 @@
         </ul>
       </nav>
       <ul class="header-contact list">
-        <li class="header-contact-item">
-          <svg class="svg" style="width: 16px; height:16px;" >
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>  
-          <a class="link email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <li class="header-contact-item">           
+          <a class="link email" href="mailto:info@devstudio.com">
+            <svg class="svg" style="width: 16px; height:16px;" >
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
         </li>
-        <li class="header-contact-item">
-          <svg class="svg" style="width: 16px; height:16px;">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg> 
-          <a class="link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="header-contact-item">          
+          <a class="link tel" href="tel:+380961111111">
+            <svg class="svg" style="width: 16px; height:16px;">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg> 
+            +38 096 111 11 11</a>
         </li>
       </ul>
     </div>
@@ -48,7 +50,7 @@
       <section class="shapka section">
         <div class="container shapka-container">
         <h1 class="h1">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn" type="button">Заказать услугу</button>
+        <button  class="btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
       </section>
 
@@ -56,31 +58,39 @@
         <div class="container">        
         <ul class="list">
           <li class="peculiarities-list-item">   
+            <div class="peculiarities-list-item-box">
             <svg class="svg" >
               <use href="./images/icons.svg#icon-antenna-1"></use>
-            </svg>                  
+            </svg>     
+          </div>             
             <h3 class="peculiarities-title">Внимание к деталям</h3>
             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
           <li class="peculiarities-list-item">
+            <div class="peculiarities-list-item-box">
             <svg class="svg" >
               <use href="./images/icons.svg#icon-clock-1"></use>
             </svg>   
+          </div>
             <h3 class="peculiarities-title">Пунктуальность</h3>
             <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 
           </li>
           <li class="peculiarities-list-item">
+            <div class="peculiarities-list-item-box">
             <svg class="svg" >
               <use href="./images/icons.svg#icon-diagram-1"></use>
             </svg>   
+          </div>
             <h3 class="peculiarities-title">Планирование</h3>
             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
           <li class="peculiarities-list-item">
+            <div class="peculiarities-list-item-box">
             <svg class="svg" >
               <use href="./images/icons.svg#icon-astronaut-1"></use>
             </svg>   
+          </div>
             <h3 class="peculiarities-title">Современные технологии</h3>
             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
@@ -91,10 +101,20 @@
   <div class="container">
         <h2 class="h2">Чем мы занимаемся</h2>
         <ul class="list">
-          <li class="activity-list-item"><img class="image" src="./images/activity/activity1.jpg" alt="Человек печатает код" ></li>
+          <li class="activity-list-item"><img class="image" src="./images/activity/activity1.jpg" alt="Человек печатает код" >
+            <div class="activity-desctiption">
+          <h3 class="h3">Десктопные приложения</h3>
+        </div>
+        </li>
           <li class="activity-list-item"><img class="image" src="./images/activity/activity2.jpg" alt="Человек выбирает варианты дизайна для мобильной версии"
-              ></li>
-          <li class="activity-list-item"><img class="image activity-image" src="./images/activity/activity3.jpg" alt="Цветовая палитра" ></li>
+              >
+              <div class="activity-desctiption">
+            <h3 class="h3">Мобильные приложения</h3>
+          </div></li>
+          <li class="activity-list-item"><img class="image activity-image" src="./images/activity/activity3.jpg" alt="Цветовая палитра" >
+            <div class="activity-desctiption">
+          <h3 class="h3">Дизайнерские решения</h3>
+        </div></li>
         </ul>
       </div>
       </section>
@@ -110,28 +130,28 @@
             <p class="text">Product Designer</p>
             <ul class="list social">
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
@@ -147,28 +167,28 @@
             <p class="text">Frontend Developer</p>
             <ul class="list social">
               <li class="item">
-                <a href="">
+                <a  class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a  class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a  class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a  class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
@@ -185,28 +205,28 @@
             <p class="text">Marketing</p>
             <ul class="list social">
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
@@ -223,28 +243,28 @@
             <p class="text">UI Designer</p>
             <ul class="list social">
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
               </li>
               <li class="item">
-                <a href="">
+                <a class="social-link" href="">
                 <svg class="svg">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
@@ -262,7 +282,7 @@
           <h2 class="h2">Постоянные клиенты</h2>
           <ul class="list">
             <li class="item">
-              <a href="" >
+              <a class="social-link" href="" >
                 <div class="box" >
               <svg class="svg">
                 <use href="./images/icons.svg#icon-Logo"></use>
@@ -271,7 +291,7 @@
             </a>
             </li>
             <li class="item" >
-              <a href="" >
+              <a class="social-link" href="" >
                 <div class="box" >
               <svg class="svg">
                 <use href="./images/icons.svg#icon-Logo-1"></use>
@@ -298,7 +318,7 @@
             </a>
             </li>
             <li class="item">
-              <a  href="" >
+              <a class="social-link"  href="" >
                 <div class="box" >
               <svg class="svg">
                 <use href="./images/icons.svg#icon-Logo-4"></use>
@@ -307,7 +327,7 @@
             </a>
             </li>
             <li class="item">
-              <a  href="" >
+              <a class="social-link"  href="" >
                 <div class="box" >
               <svg class="svg">
                 <use href="./images/icons.svg#icon-Logo-5"></use>
@@ -338,30 +358,46 @@
         <p class="text">присоединяйтесь</p>
         <ul class="list social">
           <li class="item">
+            <a href="" class="social-link">
             <svg class="svg">
               <use href="./images/icons.svg#icon-instagram-2"></use>
             </svg>
+          </a>
           </li>
           <li class="item">
+            <a href="" class="social-link">
             <svg class="svg">
               <use href="./images/icons.svg#icon-twitter-1"></use>
             </svg>
+          </a>
           </li>
           <li class="item">
+            <a href="" class="social-link">
             <svg class="svg">
               <use href="./images/icons.svg#icon-facebook-1"></use>
             </svg>
+          </a>
           </li>
           <li class="item">
+            <a href="" class="social-link">
             <svg class="svg">
               <use href="./images/icons.svg#icon-linkedin-1"></use>
             </svg>
+          </a>
           </li>
         </ul>
       </div>
       </div>
     </footer>
-    <!-- comments -->  
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+<button type="button" class="btn close" data-modal-close>
+  <svg class="svg-close">
+    <use href="./images/icons.svg#icon-cross"></use>
+  </svg>
+</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
-
 </html>
