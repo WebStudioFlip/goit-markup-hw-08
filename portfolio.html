@@ -17,179 +17,179 @@
 </head>
 
 <body>
+
   <header class="header">
-    <div class="container list">
-    <a class="logo link" href="./index.html"><span class="first-logo">Web</span><span
-        class="second-logo">Studio</span></a>
-    <nav class="site-nav">
-      <ul class="site-nav-list list">
-        <li class="site-nav-list-item"><a class="link" href="./index.html">Студия</a></li>
-        <li class="site-nav-list-item"><a class="link current-page" href="./portfolio.html">Портфолио</a></li>
-        <li class="site-nav-list-item"><a class="link" href="">Контакты</a></li>
+    <div class="container list box-flex">
+      <a class="link font-3" href="./index.html">Web<span class="header__logo">Studio</span></a>
+      <nav class="header__navigation ">
+        <ul class="header__navigation__list list box-flex font-7 ">
+          <li class="header__navigation__list__item position-items"><a class="link animation-1 current-page" href="./index.html"> <p> Студия</p></a></li>
+          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href="./portfolio.html"> <p> Портфолио</p></a></li>
+          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href=""><p>Контакты</p></a></li>
+        </ul>
+      </nav>
+      <ul class="header__contact list box-flex font-7">
+        <li class="header__contact__item position-items ">
+          <a class="link email animation-1 box-flex" href="mailto:info@devstudio.com">
+            <svg class="svg animation-1" style="width: 16px; height:16px;">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <p>info@devstudio.com</p></a>
+        </li>
+        <li class="header__contact__item position-items ">
+          <a class="link tel animation-1 box-flex" href="tel:+380961111111">
+            <svg class="svg animation-1" style="width: 16px; height:16px;">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <p>+38 096 111 11 11</p></a>
+        </li>
       </ul>
-    </nav>
-    <ul class="header-contact list">
-      <li class="header-contact-item">           
-        <a class="link email" href="mailto:info@devstudio.com">
-          <svg class="svg" style="width: 16px; height:16px;" >
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          info@devstudio.com</a>
-      </li>
-      <li class="header-contact-item">          
-        <a class="link tel" href="tel:+380961111111">
-          <svg class="svg" style="width: 16px; height:16px;">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg> 
-          +38 096 111 11 11</a>
-      </li>
-    </ul>
-  </div>
+    </div>
   </header>
 
-    <main class="main-portfolio">
+    <main class="main">
         <section class="portfolio section">
             <div class="container">
             <h1 hidden>Портфолио</h1>
-            <ul class="portfolio-memu-list list">
-                <li class="portfolio-memu-item"> <button class="filter-button btn" type="button">Все</button> </li>
-                <li class="portfolio-memu-item"><button class="filter-button btn" type="button">Веб сайты</button></li>
-                <li class="portfolio-memu-item"><button class="filter-button btn" type="button">Приложение</button></li>
-                <li class="portfolio-memu-item"><button class="filter-button btn" type="button">Дизайн</button></li>
-                <li class="portfolio-memu-item"><button class="filter-button btn" type="button">Маркетинг</button></li>
+            <ul class="portfolio__memu__list list box-flex">
+                <li class="portfolio__memu__item animation-1"> <button class="portfolio__memu__button-filter btn" type="button">Все</button> </li>
+                <li class="portfolio__memu__item a imation-1"><button class="portfolio__memu__button-filter btn" type="button">Веб сайты</button></li>
+                <li class="portfolio__memu__item animation-1"><button class="portfolio__memu__button-filter btn" type="button">Приложение</button></li>
+                <li class="portfolio__memu__item animation-1"><button class="portfolio__memu__button-filter btn" type="button">Дизайн</button></li>
+                <li class="portfolio__memu__item animation-1"><button class="portfolio__memu__button-filter btn" type="button">Маркетинг</button></li>
             </ul>
 
-            <ul class="portfolio-repeater list">
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">   
-                    <div class="portfolio-image-box">               
+            <ul class="portfolio__repeater list box-flex">
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">   
+                    <div class="portfolio__image__box">               
                     <img class="image" src="./images/portfolio/tehnokrack.jpg" alt="Технокряк">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
                   </div>
 
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Технокряк</h2>
-                    <p class="text">Веб-сайт</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Технокряк</h2>
+                    <p class="text font-4">Веб-сайт</p>
                 </div>
                 </a>
               </li>
 
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image" src="./images/portfolio/new-orlean-vs-golden-star.jpg" alt="Постер New Orlean vs Golden Star">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Постер New Orlean vs Golden Star</h2>
-                    <p class="text">Дизайн</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Постер New Orlean vs Golden Star</h2>
+                    <p class="text font-4">Дизайн</p>
                 </div>
               </a>
                 </li>
                 
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image"  src="./images/portfolio/resto-seafood.jpg" alt="Ресторан Seafood">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Ресторан Seafood</h2>
-                    <p class="text">Приложение</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Ресторан Seafood</h2>
+                    <p class="text font-4">Приложение</p>
                 </div>
               </a>
                 </li>
                 
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image" src="./images/portfolio/progect-prime.jpg" alt="Проект Prime">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Проект Prime</h2>
-                    <p class="text">Маркетинг</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Проект Prime</h2>
+                    <p class="text font-4">Маркетинг</p>
                 </div>
                 </a>
                 </li>
 
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image" src="./images/portfolio/progect-boxes.jpg" alt="Проект Boxes">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Проект Boxes</h2>
-                    <p class="text">Приложение</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Проект Boxes</h2>
+                    <p class="text font-4">Приложение</p>
                 </div>
                 </a>
                 </li>
 
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box"> 
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box"> 
                     <img class="image" src="./images/portfolio/inspiration-has-no-borders.jpg" alt="Inspiration has no Borders">                     
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Inspiration has no
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Inspiration has no
                        Borders</h2>
-                    <p class="text">Веб-сайт</p>
+                    <p class="text font-4">Веб-сайт</p>
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image" src="./images/portfolio/limited-edition.jpg" alt="Издание Limited Edition">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Издание Limited Edition</h2>
-                    <p class="text">Дизайн</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Издание Limited Edition</h2>
+                    <p class="text font-4">Дизайн</p>
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image" src="./images/portfolio/progect-lab.jpg" alt="Проект LAB">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Проект LAB</h2>
-                    <p class="text">Маркетинг</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Проект LAB</h2>
+                    <p class="text font-4">Маркетинг</p>
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-repeater-item">
-                  <a class="portfolio-repeater-item-link link" href="">
-                    <div class="portfolio-image-box">  
+                <li class="portfolio__repeater__item animation-1">
+                  <a class="portfolio__repeater__item__link link" href="">
+                    <div class="portfolio__image__box">  
                     <img class="image" src="./images/portfolio/growing-business.jpg" alt="Growing Business">
-                    <div class="portfolio-item-description">
+                    <div class="portfolio__item__description box-flex animation-1">
                       <p class="text-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eum?</p>
                       </div>
                       </div>
-                    <div class="portfolio-repeater-item-part">
-                    <h2 class="h2">Growing Business</h2>
-                    <p class="text">Приложение</p>
+                    <div class="portfolio__repeater__item__part">
+                    <h2 class="font-12">Growing Business</h2>
+                    <p class="text font-4">Приложение</p>
                 </div>
                 </a>
                 </li>
@@ -199,52 +199,68 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-div container">
-<div>
-        <a class="logo-footer link" href="/index.html"><span class="first-logo-footer">Web</span><span
-            class="second-logo-footer">Studio</span></a>
-
-        <address class="address-footer">
-          г. Киев, пр-т Леси Украинки, 26
-          <ul class="list footer-contact-list">
-            <li class="footer-contact-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer-contact-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <div class="footer__container container box-flex">
+        <div>
+          <a class="link font-3" href="/index.html">Web<span class="footer__logo">Studio</span></a>
+  
+          <address class="footer__address font-8">
+            г. Киев, пр-т Леси Украинки, 26
+            <ul class="list footer__address__contact__list">
+              <li class="footer__address__contact__item"><a class="link animation-1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="footer__address__contact__item"><a class="link animation-1" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+  
+        <div class="footer__social">
+          <p class="footer__social__title font-9">присоединяйтесь</p>
+          <ul class="footer__social__list list box-flex">
+            <li class="footer__social__item animation-1">
+              <a href="" class="footer__social__item__link link box-flex">
+                <svg class="svg">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social__item animation-1">
+              <a href="" class="footer__social__item__link  link box-flex ">
+                <svg class="svg">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social__item  animation-1">
+              <a href="" class="footer__social__item__link link box-flex">
+                <svg class="svg">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social__item  animation-1">
+              <a href="" class="footer__social__item__link link box-flex">
+                <svg class="svg">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
-      </div>
-      <div class="social-div">
-        <p class="text">присоединяйтесь</p>
-        <ul class="list social">
-          <li class="item">
-            <a href="" class="social-link">
-            <svg class="svg">
-              <use href="./images/icons.svg#icon-instagram-2"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="item">
-            <a href="" class="social-link">
-            <svg class="svg">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="item">
-            <a href="" class="social-link">
-            <svg class="svg">
-              <use href="./images/icons.svg#icon-facebook-1"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="item">
-            <a href="" class="social-link">
-            <svg class="svg">
-              <use href="./images/icons.svg#icon-linkedin-1"></use>
-            </svg>
-          </a>
-          </li>
-        </ul>
-      </div>
+        </div>
+        <div class="footer__subscription">
+          <form class="subscription__form box-flex" name="subscription-form" autocomplete="on">
+            <div class="subscription__form__box">
+              <p class="subscription__form__box__title font-9">подпишитесь на рассылку</p>
+              <label for="user_email"></label>
+              <input class="subscription__form__input" type="email" name="email" id="user_email" placeholder="E-mail">
+            </div>
+            <button class="btn btn-action subscription__form__btn  animation-1 box-flex" type="submit">
+              <p class="font-4">Подписаться</p>
+              <svg class="sibscription__form__svg svg">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+  
+        </div>
       </div>
     </footer>
 </body>
