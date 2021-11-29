@@ -3,12 +3,26 @@
 
 .footer {    
     background: var(--third-bg-cl);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px;
   } 
   
   .footer__container { 
-    align-items: baseline
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    @include mq(desktop) {
+      flex-wrap: nowrap;
+      text-align: left;      
+    }
   }
   
   .footer__logo {  
@@ -26,6 +40,14 @@
   .footer__address { 
     color: var(--main-bg-cl);
     margin-top: 20px;
+    margin-bottom: 60px;
+    @include mq(tablet) {
+      margin-bottom: 60px;      
+    }
+  
+    @include mq(desktop) {      
+      margin-bottom: 0;    
+    }
   }
   
   .footer__address__contact__list {
@@ -53,8 +75,29 @@
     color: var(--secondary-txt-cl);
   }
   
-  .footer__social {
-    margin-left: 70px;
+  .footer__social {   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    @include mq(tablet) {         
+      margin-bottom: 60px;
+      margin-left: 0;
+    margin-right: 0;
+    }
+
+    @include mq(desktop) {      
+      margin-left: 70px;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__container__logo{
+    margin-right: auto;
+    margin-left: auto;
+    @include mq(tablet) {         
+      margin-right: 0;
+    margin-left: 0;
+    }    
   }
   
   .footer__social__title {
@@ -98,7 +141,15 @@
     }
   
     .subscription__form {
-      align-items: flex-end
+      align-items: flex-end;
+      flex-wrap: wrap;
+      @include mq(tablet) {
+        flex-wrap: wrap;
+      }
+  
+      @include mq(desktop) {
+        flex-wrap: nowrap;
+      }
     }
   
     .subscription__form__box__title{
@@ -108,15 +159,27 @@
     }
   
     .subscription__form__input {
+      outline: transparent;
       padding: 15px 16px;
       background-color: transparent;
-      min-width: 358px;    
+      min-width: 450px;    
       min-height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: var(--main-bg-cl);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+margin-bottom: 20px;
+  @include mq(tablet) {
+    margin-bottom: 20px;
+    min-width: 450px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 0;
+    min-width: 358px;
+  }
+
     }
   
     .subscription__form__input:focus,
@@ -140,8 +203,13 @@
     .subscription__form__btn {    
       min-width: 200px;   
       min-height: 50px; 
-      margin-left: 12px;
-      align-items: center
+      margin-left: 50px;
+      margin-right: 50px;
+      align-items: center;
+      
+      @include mq(desktop) {
+        margin-left: 12px;
+      }
     }
     
     .sibscription__form__svg {

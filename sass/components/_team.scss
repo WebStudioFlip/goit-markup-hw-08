@@ -7,11 +7,23 @@
   }
   
   .team__list {
+    justify-items: center;
     margin-top: 50px;
+    --item: 1;
+    flex-wrap: wrap;
+
+    @include mq(tablet) {
+      --item: 2;
+      flex-wrap: wrap;
+    }
+  
+    @include mq(desktop) {
+      --item:4;
+      flex-wrap: nowrap;    
+    }
   }
   
-  .team__list__item {
-    margin-right: 30px;
+  .team__list__item {    
     width: 270px;
     background: var(--main-bg-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

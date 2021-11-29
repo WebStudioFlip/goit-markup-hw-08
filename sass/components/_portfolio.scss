@@ -2,6 +2,10 @@
 
 .portfolio__memu__list {
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    @include mq(tablet) {
+      flex-wrap: nowrap;
+    }
     }
     
     .portfolio__memu__item {
@@ -35,17 +39,29 @@
     }
     
     .portfolio__repeater {   
-      flex-direction: row;
-      flex-wrap:wrap;        
+      --item:1;
+      @include mq(tablet) {
+        --item:2;
+      }
+  
+      @include mq(desktop) {
+        --item:3;
+      }       
     }
     
     .portfolio__repeater__item {
       display: block;
       position: relative;
       box-sizing: border-box;
-      width: 370px;
-      margin-right: 30px;  
-      margin-bottom: 30px;  
+      width: 450px;      
+      @include mq(tablet) {
+        width: 354px;
+      }
+  
+      @include mq(desktop) {
+        width: 370px;
+      }     
+      
     }
     
     .portfolio__image__box{

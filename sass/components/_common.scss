@@ -156,12 +156,10 @@ body {
 
     @include mq(tablet) {
       max-width: 768px;
-
     }
 
     @include mq(desktop) {
       max-width: 1200px;
-
     }
     
   }
@@ -177,13 +175,13 @@ body {
   .link {  
     text-decoration: none;
     color: var(--main-txt-cl);
-    --animation-property: color;
-  }
+    --animation-property: color;  
   
-  .link:hover,
-  .link:focus {  
+  &:hover,
+  &:focus {  
     color: var(--secondary-txt-cl);
   }
+}
   
   .box-flex {
     display: flex;
@@ -198,10 +196,7 @@ body {
     cursor: pointer;
   }
   
-  .btn-action:hover,
-  .btn-action:focus {      
-    background-color: var(--btn-bg-secondary-cl);  
-  }
+  
   
   .animation-1 {
     transition-property: var(--animation-property);
@@ -214,6 +209,10 @@ body {
     background-color: var(--secondary-txt-cl);
     box-shadow: var(--main-box-shadow);  
     --animation-property: background-color;
+    &:hover,
+  &:focus {      
+    background-color: var(--btn-bg-secondary-cl);  
+  }
   }
   
   .image {
@@ -235,11 +234,12 @@ body {
   }
   
   .position-items{
-    margin-right: var(--margin-element);
-  }
+    margin-right: var(--margin-element);  
   
-  .position-items:last-child {
+  &:last-child {
     margin-right:0;
   }
+
+}
   
   /* universal class - finish */

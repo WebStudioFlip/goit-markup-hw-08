@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -23,9 +23,17 @@
       <a class="link font-3" href="./index.html">Web<span class="header__logo">Studio</span></a>
       <nav class="header__navigation ">
         <ul class="header__navigation__list list box-flex font-7 ">
-          <li class="header__navigation__list__item position-items"><a class="link animation-1 current-page" href="./index.html"> <p> Студия</p></a></li>
-          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href="./portfolio.html"> <p> Портфолио</p></a></li>
-          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href=""><p>Контакты</p></a></li>
+          <li class="header__navigation__list__item position-items"><a class="link animation-1 current-page"
+              href="./index.html">
+              <p> Студия</p>
+            </a></li>
+          <li class="header__navigation__list__item position-items"><a class="link  animation-1"
+              href="./portfolio.html">
+              <p> Портфолио</p>
+            </a></li>
+          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href="">
+              <p>Контакты</p>
+            </a></li>
         </ul>
       </nav>
       <ul class="header__contact list box-flex font-7">
@@ -34,16 +42,24 @@
             <svg class="svg animation-1" style="width: 16px; height:16px;">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <p>info@devstudio.com</p></a>
+            <p>info@devstudio.com</p>
+          </a>
         </li>
         <li class="header__contact__item position-items ">
           <a class="link tel animation-1 box-flex" href="tel:+380961111111">
             <svg class="svg animation-1" style="width: 16px; height:16px;">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <p>+38 096 111 11 11</p></a>
+            <p>+38 096 111 11 11</p>
+          </a>
         </li>
       </ul>
+      <button class="mobile__menu__open  animation-1" type="button" data-modal-menu-open>
+        <svg class="svg mobile__menu__open__svg" width="40" ; height="40" ;>
+          <use href="./images/icons.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
 
@@ -51,14 +67,16 @@
     <section class="shapka section">
       <div class="container shapka__container">
         <h1 class="font-1">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn btn-action animation-1" type="button" data-modal-open> <p class="font-4"> Заказать услугу</p></button>
+        <button class="btn btn-action animation-1" type="button" data-modal-open>
+          <p class="font-4"> Заказать услугу</p>
+        </button>
       </div>
     </section>
 
     <section class="section peculiarities">
       <div class="container peculiarities__container">
-        <ul class="peculiarities__container__list  list box-flex">
-          <li class="peculiarities__container__item position-items">
+        <ul class="peculiarities__container__list  list grid">
+          <li class="peculiarities__container__item">
             <div class="peculiarities__container__item__box box-flex">
               <svg class="svg">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -67,7 +85,7 @@
             <h3 class="peculiarities__container__item__title font-9">Внимание к деталям</h3>
             <p class="font-8">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li class="peculiarities__container__item position-items">
+          <li class="peculiarities__container__item">
             <div class="peculiarities__container__item__box box-flex">
               <svg class="svg">
                 <use href="./images/icons.svg#icon-clock-1"></use>
@@ -77,7 +95,7 @@
             <p class="font-8">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 
           </li>
-          <li class="peculiarities__container__item position-items">
+          <li class="peculiarities__container__item">
             <div class="peculiarities__container__item__box box-flex">
               <svg class="svg">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -86,7 +104,7 @@
             <h3 class="peculiarities__container__item__title font-9">Планирование</h3>
             <p class="font-8">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
-          <li class="peculiarities__container__item position-items">
+          <li class="peculiarities__container__item">
             <div class="peculiarities__container__item__box box-flex">
               <svg class="svg">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -125,11 +143,11 @@
         </ul>
       </div>
     </section>
-   
+
     <section class="section team">
       <div class="container team__container">
         <h2 class="font-2">Наша команда</h2>
-        <ul class="list team__list box-flex">
+        <ul class="list team__list grid">
           <li class="team__list__item">
             <img class="image" src="./images/team/igor.jpg" alt="Мужчина в бордовой рубашке">
             <div class="team__list__item__info">
@@ -288,23 +306,23 @@
     <section class="section clients">
       <div class="container client__container">
         <h2 class="font-2 client__container__title">Постоянные клиенты</h2>
-        <ul class="client__list list box-flex">
+        <ul class="client__list list grid">
           <li class="client__list__item animation-1 box-flex">
-            <a class="client__list__item__social-link animation-1 "  href="">
+            <a class="client__list__item__social-link animation-1 " href="">
               <svg class="svg animation-1">
                 <use href="./images/icons.svg#icon-Logo"></use>
               </svg>
             </a>
           </li>
           <li class="client__list__item animation-1 box-flex">
-            <a class="client__list__item__social-link animation-1"  href="">
+            <a class="client__list__item__social-link animation-1" href="">
               <svg class="svg animation-1">
                 <use href="./images/icons.svg#icon-Logo-1"></use>
               </svg>
             </a>
           </li>
           <li class="client__list__item animation-1 box-flex">
-            <a class="client__list__item__social-link animation-1"  href="" >
+            <a class="client__list__item__social-link animation-1" href="">
               <svg class="svg animation-1">
                 <use href="./images/icons.svg#icon-Logo-2"></use>
               </svg>
@@ -318,7 +336,7 @@
             </a>
           </li>
           <li class="client__list__item animation-1 box-flex">
-            <a class="client__list__item__social-link animation-1"  href="">
+            <a class="client__list__item__social-link animation-1" href="">
               <svg class="svg animation-1">
                 <use href="./images/icons.svg#icon-Logo-4"></use>
               </svg>
@@ -338,14 +356,16 @@
 
   <footer class="footer">
     <div class="footer__container container box-flex">
-      <div>
+      <div class="footer__container__logo">
         <a class="link font-3" href="/index.html">Web<span class="footer__logo">Studio</span></a>
 
         <address class="footer__address font-8">
           г. Киев, пр-т Леси Украинки, 26
           <ul class="list footer__address__contact__list">
-            <li class="footer__address__contact__item"><a class="link animation-1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="footer__address__contact__item"><a class="link animation-1" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="footer__address__contact__item"><a class="link animation-1"
+                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="footer__address__contact__item"><a class="link animation-1" href="tel:+380961111111">+38 096 111
+                11 11</a></li>
           </ul>
         </address>
       </div>
@@ -383,11 +403,14 @@
           </li>
         </ul>
       </div>
+
       <div class="footer__subscription">
         <form class="subscription__form box-flex" name="subscription-form" autocomplete="on">
-          <div class="subscription__form__box">                    
-            <label for="user_email"> <p class="subscription__form__box__title font-9">подпишитесь на рассылку</p></label>
-            <input class="subscription__form__input" type="email" name="email" id="user_email" placeholder="E-mail">  
+          <div class="subscription__form__box">
+            <label for="user_email">
+              <p class="subscription__form__box__title font-9">подпишитесь на рассылку</p>
+            </label>
+            <input class="subscription__form__input" type="email" name="email" id="user_email" placeholder="E-mail">
           </div>
           <button class="btn btn-action subscription__form__btn  animation-1 box-flex" type="submit">
             <p class="font-4">Подписаться</p>
@@ -400,7 +423,8 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden  box-flex" data-modal>    
+
+  <div class="backdrop is-hidden  box-flex" data-modal>
     <div class="modal">
       <button type="button" class="btn modal__button-close" aria-label="Закрыть" data-modal-close>
         <svg class="modal__button-close__icon">
@@ -409,45 +433,91 @@
       </button>
       <form class="form modal__form" autocomplete="off" re>
         <p class="modal__form__title font-11">Оставьте свои данные, мы вам перезвоним</p>
-        <label class="modal__form__label" for="user_name"> <p class="font-10">Имя</p>
+        <label class="modal__form__label" for="user_name">
+          <p class="font-10">Имя</p>
           <input class="modal__form__input" type="text" name="name" id="user_name" placeholder="">
           <svg class="modal__form__icon" width="18" ; height="18" ;>
             <use href="./images/icons.svg#icon-Vector-9"></use>
           </svg>
         </label>
-        <label class="modal__form__label" for="user_tel"> <p class="font-10">Телефон</p>
+        <label class="modal__form__label" for="user_tel">
+          <p class="font-10">Телефон</p>
           <input class="modal__form__input" type="tel" name="tel" id="user_tel" placeholder="">
           <svg class="modal__form__icon" width="18" ; height="18">
             <use href="./images/icons.svg#icon-Vector-10"></use>
           </svg>
         </label>
-        <label class="modal__form__label" for="user_email"> <p class="font-10">Почта</p>
+        <label class="modal__form__label" for="user_email">
+          <p class="font-10">Почта</p>
           <input class="modal__form__input" type="email" name="email" id="user_email" placeholder="">
           <svg class="modal__form__icon" width="18" ; height="18">
             <use href="./images/icons.svg#icon-Vector-11"></use>
           </svg>
         </label>
-        <label class="modal__form__label" for="user_message"> <p class="font-10">Комментарий</p></label>
+        <label class="modal__form__label" for="user_message">
+          <p class="font-10">Комментарий</p>
+        </label>
         <textarea class="modal__form__message" name="message" id="user_message" cols="30" rows="5"
-          placeholder="Введите текст"></textarea>        
+          placeholder="Введите текст"></textarea>
         <div class="modal__form__agrement">
-          <input class="modal__form__agrement__checkbox visually-hidden" type="checkbox" id="agrement__checkbox" name="checkbox">
+          <input class="modal__form__agrement__checkbox visually-hidden" type="checkbox" id="agrement__checkbox"
+            name="checkbox">
           <label class="modal__form__agrement__label box-flex" for="agrement__checkbox">
             <svg class="modal__form__agrement__checkbox-input__icon" width="16" ; height="15">
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
             <p class="modal__form__agrement__text font-8">Соглашаюсь с рассылкой и принимаю&nbsp; </p>
             <a class="modal__form__agrement__link font-8" href="">Условия договора</a>
-          </label>           
+          </label>
         </div>
         <button class="modal__form__btn-send btn-action btn animation-1" type="submit">
           <p class="font-4">Отправить</p>
         </button>
-               
       </form>
     </div>
   </div>
+
+  <div class="modal__menu is-visible box-flex" data-modal-menu>
+    <button class="modal__menu__btn__close" type="button" data-modal-menu-close>
+      <svg class="modal__menu__button-close__icon" width="18" ; height="18">
+        <use href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <ul class="modal__menu__navigation list font-7 ">
+      <li class="modal__menu__navigation__item"><a class="link animation-1 current-page" href="./index.html">
+          <p class="font-5"> Студия</p>
+        </a></li>
+      <li class="modal__menu__navigation__item"><a class="link  animation-1" href="./portfolio.html">
+          <p class="font-5"> Портфолио</p>
+        </a></li>
+      <li class="modal__menu__navigation__item"><a class="link  animation-1" href="">
+          <p class="font-5">Контакты</p>
+        </a></li>
+    </ul>
+    <ul class="modal__menu__contact list font-7">
+      <li class="modal__menu__contact__item">
+        <a class="modal__menu__contact__item__tel link tel animation-1 box-flex" href="tel:+380961111111">
+          <p class="font-5">+38 096 111 11 11</p>
+        </a>
+      </li>
+      <li class="modal__menu__contact__item">
+        <a class="modal__menu__contact__item__email link email animation-1 box-flex" href="mailto:info@devstudio.com">
+          <p class="font-7">info@devstudio.com</p>
+        </a>
+      </li>      
+      <li class="modal__menu__contact__item">
+        <ul class="modal__menu__contact__social list box-flex">
+          <li class="modal__menu__contact__social__item link"><a href="">Instagram</a></li>
+          <li class="modal__menu__contact__social__item link"><a href="">Twitter</a></li>
+          <li class="modal__menu__contact__social__item link"><a href="">Facebook</a></li>
+          <li class="modal__menu__contact__social__item link"><a href="">LinkedIn</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

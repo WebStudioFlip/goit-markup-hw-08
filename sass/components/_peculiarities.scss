@@ -1,8 +1,21 @@
 /* block peculiarities start*/
 
-.peculiarities__container__item {
-    width: 270px;
-    --margin-element:30px;
+.peculiarities__container__list {
+  --item:1;
+  flex-wrap: wrap;
+  @include mq(tablet) {
+    --item:2;
+    flex-wrap: wrap;
+  }
+
+  @include mq(desktop) {
+    --item:4;
+    flex-wrap: nowrap;    
+  }
+}
+
+.peculiarities__container__item {    
+    --margin-element:30px;    
   }
   
   .peculiarities__container__item .svg{  
@@ -13,16 +26,25 @@
       
   }
   
-  .peculiarities__container__item__box {  
-    width: 270px;
-    height: 120px;   
-    background-color: var(--secondary-bg-cl);     
+  .peculiarities__container__item__box {
+    padding: 25px;        
+    background-color: var(--secondary-bg-cl);    
+    width: 100%;
   }
   
   .peculiarities__container__item__title {
     margin-top: 30px;
     margin-bottom: 10px;  
     text-transform: uppercase;
+
+    text-align: center;
+  @include mq(tablet) {
+    text-align: left;
+  }
+
+  @include mq(desktop) {
+    text-align: left;   
+  }
   }
   
   .peculiarities__container__item .font-8 {    

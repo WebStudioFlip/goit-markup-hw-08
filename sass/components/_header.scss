@@ -2,6 +2,13 @@
 .header {  
     background-color: var(--main-bg-cl);
       border-bottom: 1px solid #ececec;
+      @include mq(mobile-only) {
+        padding-top: 16px;
+        padding-left: 15px;
+        padding-right: 16px;
+        padding-bottom: 10px;
+       
+      }
     }
     
     .header .font-3 {
@@ -12,11 +19,21 @@
       color: var(--main-txt-cl);
     }
     
-    .header__navigation {     
-      margin-left: 93px;  
+    .header__navigation {  
+      display: none;          
       text-align: left;
       vertical-align: top;  
-      --margin-element:50px;
+      --margin-element:50px; 
+      @include mq(tablet) {
+        margin-left: 88px;
+        display: block;
+      }
+  
+      @include mq(desktop) {
+        margin-left: 93px;
+       display: block;
+      }
+     
     }
     
     .current-page{
@@ -46,8 +63,22 @@
     }
     
     .header__contact {
+      display: none;
       margin-left: auto;
       --margin-element:50px;
+
+      @include mq(tablet) {
+        margin-left: 88px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start
+      }
+  
+      @include mq(desktop) {
+        margin-left: 93px;
+       display: flex;
+       flex-wrap: nowrap;
+      }
     }
     
     .header__contact__item .link{   
@@ -60,7 +91,8 @@
       color: var(--secondary-txt-cl);
     }
     
-    .header__contact__item .svg{   
+    .header__contact__item .svg{  
+      display: block; 
       fill: var(--third-txt-cl);   
       margin-right: 10px; 
     }

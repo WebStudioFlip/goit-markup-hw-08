@@ -4,19 +4,37 @@
     margin-bottom: 50px;
   }
   
-  .client__list__item:not(:last-child) {
-    margin-right: 30px;
-    
+  .client__list {
+    justify-items: center;    
+    --item: 2;
+    flex-wrap: wrap;
+
+    @include mq(tablet) {
+      --item: 3;
+      flex-wrap: wrap;
+    }
+  
+    @include mq(desktop) {
+      --item: 6;
+      flex-wrap: nowrap;    
+    }
   }
   
+  
   .client__list__item { 
-    width: 170px;
+    width: 210px;
     height: 92px; 
     border: 1px solid #AFB1B8;  
   box-sizing: border-box;
   border-radius: 4px;
   --animation-property: border;
-    
+  @include mq(tablet) {
+    width: 226px;
+  }
+
+  @include mq(desktop) {
+    width: 170px;  
+  }
   }
   
   .client__list__item:hover,

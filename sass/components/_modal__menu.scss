@@ -1,0 +1,81 @@
+
+.mobile__menu__open {
+    display: none;
+    @include mq(mobile-only) {
+        display: flex;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+}
+
+.modal__menu {
+    position: absolute;      
+    top: 0;
+    left: 0;    
+    width: 100vw;
+    height: 100%;
+    padding: 46px 40px;
+    background: #ffffff;
+    opacity:1;
+    transform: translateX(0);
+    transition-property: opacity, visibility , transform;
+    transition-duration: 1250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.is-visible {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition-property: opacity, visibility, transform;
+    transition-duration: 1250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+  }
+
+.modal__menu__btn__close {
+    background-color: transparent;
+    outline: transparent;
+    position: absolute;
+    right: 25px;
+    top: 21px;
+    border: none;
+}
+
+.modal__menu__button-close__icon {
+    display: block;
+}
+
+.modal__menu__contact{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.modal__menu__navigation__item .font-5{
+    font-size: 40px;
+    text-align: left;    
+}
+
+.modal__menu__navigation__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.modal__menu__contact__item__tel .font-5{
+    font-size: 34px;
+letter-spacing: 0.02em;
+}
+
+.modal__menu__contact__item__email .font-7{
+    font-size: 24px;
+}
+
+.modal__menu__contact__social__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+

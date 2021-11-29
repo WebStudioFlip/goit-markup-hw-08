@@ -2,7 +2,13 @@
 
 
 .activity {
-    padding-bottom: 94px;
+  display: none;  
+
+  @include mq(desktop) {
+    display: block;
+    padding-bottom: 94px;;
+  }
+    
   }
   
   .activity__list {
