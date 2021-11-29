@@ -1,0 +1,235 @@
+body {  
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 14px;
+    color: var(--main-txt-cl);
+    
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+  
+  /* Fonts block - start */
+  .font-1{
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  }
+  
+  .font-2 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+  
+  
+  .font-3 {
+    font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  }
+  
+  .font-4 {
+    font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  }
+  
+  .font-5 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;  
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  .font-6 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  .font-7 {  
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  }
+  
+  .font-8 {
+    font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  }
+  
+  .font-9 {
+    font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  }
+  
+  .font-10 {
+    font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--third-txt-cl);
+  }
+  
+  .font-11 {
+    font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+  
+  .font-12 {
+    font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.06em;
+  }
+  
+  /* Fonts block - finish */
+  
+  /* universal class - start */
+  
+  .list,
+   .list-marcked{  
+    list-style: none;  
+    padding-inline-start: 0;
+  }
+  
+  .container {   
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .section {
+    max-width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .link {  
+    text-decoration: none;
+    color: var(--main-txt-cl);
+    --animation-property: color;
+  }
+  
+  .link:hover,
+  .link:focus {  
+    color: var(--secondary-txt-cl);
+  }
+  
+  .box-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn {     
+    text-align: center;    
+    border-width: 0px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  
+  .btn-action:hover,
+  .btn-action:focus {      
+    background-color: var(--btn-bg-secondary-cl);  
+  }
+  
+  .animation-1 {
+    transition-property: var(--animation-property);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-action {
+    color: var(--main-bg-cl);
+    background-color: var(--secondary-txt-cl);
+    box-shadow: var(--main-box-shadow);  
+    --animation-property: background-color;
+  }
+  
+  .image {
+    display: block; 
+    object-fit: cover;
+  }
+  
+  .svg { 
+    display: inline-block;  
+     background-color: transparent;  
+     justify-content: center;
+     align-items: center;  
+  }
+   
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(var(--item), 1fr);
+    gap: var(--gap);
+  }
+  
+  .position-items{
+    margin-right: var(--margin-element);
+  }
+  
+  .position-items:last-child {
+    margin-right:0;
+  }
+  
+  /* universal class - finish */

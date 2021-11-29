@@ -1,0 +1,38 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+  
+    /* text color */
+    --main-txt-cl: #212121;  
+    --secondary-txt-cl: #2196f3;
+    --third-txt-cl: #757575;
+    
+  
+    --title-txt-cl: #303030;
+    --btn-txt-cl: #303030;
+    --btn-bg-secondary-cl: #188CE8;
+  
+    /* colors */
+    --accent-cl: #ff6c00;
+    --main-bg-cl: #ffffff;
+    --secondary-bg-cl: #F5F4FA;
+    --third-bg-cl:#2f303a;
+  
+  
+    --black-cl: #000000;
+    --grey-cl: #9da4bd;
+    --grey-cl-alpha: rgba(157, 164, 189, 0.6);
+  
+    --linear-gradient: linear-gradient(
+      180deg,
+      rgba(47, 48, 58, 0.2) 0%,     
+       rgba(47, 48, 58, 0.4) 100%
+    );
+  
+    /* others */
+    --border-radius: 4px;
+    --gap: 30px;
+    --item:3;
+    --margin-element: 30px;
+    --main-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }

@@ -1,0 +1,32 @@
+/* block peculiarities start*/
+
+.peculiarities__container__item {
+    width: 270px;
+    --margin-element:30px;
+  }
+  
+  .peculiarities__container__item .svg{  
+    display: inline-block;
+    width: 70px;
+    height: 70px;    
+     background-color: transparent;  
+      
+  }
+  
+  .peculiarities__container__item__box {  
+    width: 270px;
+    height: 120px;   
+    background-color: var(--secondary-bg-cl);     
+  }
+  
+  .peculiarities__container__item__title {
+    margin-top: 30px;
+    margin-bottom: 10px;  
+    text-transform: uppercase;
+  }
+  
+  .peculiarities__container__item .font-8 {    
+    color: var(--third-txt-cl);
+  }
+  
+  /* block peculiarities finish*/

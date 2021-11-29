@@ -1,0 +1,40 @@
+/* block client start*/
+
+.client__container__title {
+    margin-bottom: 50px;
+  }
+  
+  .client__list__item:not(:last-child) {
+    margin-right: 30px;
+    
+  }
+  
+  .client__list__item { 
+    width: 170px;
+    height: 92px; 
+    border: 1px solid #AFB1B8;  
+  box-sizing: border-box;
+  border-radius: 4px;
+  --animation-property: border;
+    
+  }
+  
+  .client__list__item:hover,
+  .client__list__item:focus{  
+    border: 1px solid var(--secondary-txt-cl);  
+  }
+  .client__list__item .svg{ 
+    fill:  #AFB1B8;
+    width: 106px;
+    height: 60px;  
+    --animation-property: fill;
+    }
+  
+  
+  .client__list__item:hover .svg,
+  .client__list__item:focus .svg{  
+    fill:  var(--secondary-txt-cl);  
+  }
+  
+  
+  /* block client finish*/

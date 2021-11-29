@@ -1,0 +1,36 @@
+/* block activity start*/
+
+
+.activity {
+    padding-bottom: 94px;
+  }
+  
+  .activity__list {
+    margin-top: 50px;
+  }
+  
+  .activity__list__item {
+    --margin-element:30px;
+  }
+  
+  .activity__list__item .image {
+    object-fit: cover;
+    height: 294px;
+    width: 370px;
+  }
+  
+  .activity__list__item__description {  
+    position: relative;
+    top: -70px;
+  min-height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  }
+  
+  .activity__list__item .font-9 {  
+    align-items: center;  
+  text-transform: uppercase;
+  color: var(--main-bg-cl);
+  }
+  
+  /* block activity finish*/

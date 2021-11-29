@@ -1,0 +1,33 @@
+/* block shapka start*/
+
+.shapka {      
+    background-image: var(--linear-gradient),url(../images/activity/img.jpg);   
+    background-size: contain; 
+    background-color: var(--third-bg-cl);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  
+  .shapka__container { 
+    text-align: center;
+  
+  }
+  
+  .shapka .font-1 { 
+    display: inline-block;  
+    max-width: 696px;   
+    text-transform: uppercase;  
+    color: var(--main-bg-cl);
+  }
+  
+  .shapka__container .btn-action { 
+    display: block;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px 32px;    
+   }
+  
+  
+  
+  /* block shapka finish*/
