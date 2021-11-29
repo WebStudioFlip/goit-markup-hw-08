@@ -148,12 +148,22 @@ body {
     padding-inline-start: 0;
   }
   
-  .container {   
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;  
+  .container {  
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+
+    @include mq(tablet) {
+      max-width: 768px;
+
+    }
+
+    @include mq(desktop) {
+      max-width: 1200px;
+
+    }
+    
   }
   
   .section {

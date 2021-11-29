@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
@@ -385,10 +385,9 @@
       </div>
       <div class="footer__subscription">
         <form class="subscription__form box-flex" name="subscription-form" autocomplete="on">
-          <div class="subscription__form__box">
-            <p class="subscription__form__box__title font-9">подпишитесь на рассылку</p>
-            <label for="user_email"></label>
-            <input class="subscription__form__input" type="email" name="email" id="user_email" placeholder="E-mail">
+          <div class="subscription__form__box">                    
+            <label for="user_email"> <p class="subscription__form__box__title font-9">подпишитесь на рассылку</p></label>
+            <input class="subscription__form__input" type="email" name="email" id="user_email" placeholder="E-mail">  
           </div>
           <button class="btn btn-action subscription__form__btn  animation-1 box-flex" type="submit">
             <p class="font-4">Подписаться</p>
