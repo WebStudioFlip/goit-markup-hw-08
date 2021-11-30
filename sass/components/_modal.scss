@@ -67,12 +67,18 @@
   border-radius: 50%;
   }
   
+  .modal__button-close:hover .modal__button-close__icon,
+  .modal__button-close:focus .modal__button-close__icon{
+    fill: var(--secondary-txt-cl);
+  }
+
   .modal__button-close__icon {    
     fill: var(--black-cl);
     position: relative;  
     width: 10px;
     height: 10px;  
     padding: 0;  
+    --animation: fill;
     }
   
     .modal__form__label {

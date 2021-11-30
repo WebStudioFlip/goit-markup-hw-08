@@ -1181,6 +1181,11 @@ body {
   border-radius: 50%;
 }
 
+.modal__button-close:hover .modal__button-close__icon,
+.modal__button-close:focus .modal__button-close__icon {
+  fill: var(--secondary-txt-cl);
+}
+
 .modal__button-close__icon {
   fill: var(--black-cl);
   position: relative;
@@ -1399,8 +1404,14 @@ body {
   border: none;
 }
 
+.modal__menu__btn__close:hover .modal__menu__button-close__icon,
+.modal__menu__btn__close:focus .modal__menu__button-close__icon {
+  fill: var(--secondary-txt-cl);
+}
+
 .modal__menu__button-close__icon {
   display: block;
+  --animation: fill;
 }
 
 .modal__menu__contact {
@@ -1425,6 +1436,14 @@ body {
   margin-bottom: 30px;
 }
 
+.modal__menu__contact__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.modal__menu__contact__item:last-child {
+  margin-top: 32px;
+}
+
 .modal__menu__contact__item__tel .font-5 {
   font-size: 34px;
   letter-spacing: 0.02em;
@@ -1434,8 +1453,21 @@ body {
   font-size: 24px;
 }
 
+.modal__menu__contact__social__item .link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-txt-cl);
+}
+
 .modal__menu__contact__social__item:not(:last-child) {
-  margin-right: 20px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal__menu__contact__social__item:not(:first-child) {
+  padding-left: 10px;
 }
 
 /* Portfolio Page */
