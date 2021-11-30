@@ -13,6 +13,10 @@
     
     .header .font-3 {
       color: var(--secondary-txt-cl);
+      font-size: 24px; 
+      @include mq(desktop) {
+        font-size: 26px;  
+      }
     }
     
     .header__logo {    
@@ -30,8 +34,7 @@
       }
   
       @include mq(desktop) {
-        margin-left: 93px;
-       display: block;
+        margin-left: 93px;      
       }
      
     }

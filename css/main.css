@@ -255,8 +255,9 @@ body {
 
 .image {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* object-fit: cover; */
+  height: auto;
+  max-width: 100%;
 }
 
 .svg {
@@ -304,6 +305,13 @@ body {
 
 .header .font-3 {
   color: var(--secondary-txt-cl);
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .header .font-3 {
+    font-size: 26px;
+  }
 }
 
 .header__logo {
@@ -327,7 +335,6 @@ body {
 @media (min-width: 1280px) {
   .header__navigation {
     margin-left: 93px;
-    display: block;
   }
 }
 
@@ -419,17 +426,30 @@ body {
 
 /* block shapka start*/
 .shapka {
-  background-image: var(--linear-gradient), url(../images/activity/img.jpg);
-  background-size: contain;
-  background-color: var(--third-bg-cl);
   padding-top: 118px;
   padding-bottom: 118px;
+  background-size: contain;
+  background-color: var(--third-bg-cl);
+  background-image: var(--linear-gradient), url(../images/hero/bg-img_sm.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .shapka {
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_sm@2x.jpg);
+  }
 }
 
 @media (min-width: 768px) {
   .shapka {
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_md.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .shapka {
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_md@2x.jpg);
   }
 }
 
@@ -437,6 +457,13 @@ body {
   .shapka {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_lg.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .shapka {
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_lg@2x.jpg);
   }
 }
 
@@ -591,6 +618,16 @@ body {
   background: var(--secondary-bg-cl);
 }
 
+.team .font-2 {
+  font-size: 28px;
+}
+
+@media (min-width: 1280px) {
+  .team .font-2 {
+    font-size: 36px;
+  }
+}
+
 .team__list {
   justify-items: center;
   margin-top: 50px;
@@ -616,7 +653,7 @@ body {
 }
 
 .team__list__item {
-  width: 270px;
+  /* width: 270px; */
   background: var(--main-bg-cl);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -627,13 +664,11 @@ body {
   margin-right: 0px;
 }
 
-.team__list__item .image {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 260px;
-  width: 270px;
-}
-
+/* .team__list__item .image {
+    object-fit: cover;
+    height: 260px;
+    width: 270px;
+  } */
 .team__list__item .social {
   font-size: 0px;
   line-height: 1;
@@ -692,20 +727,31 @@ body {
 /* block client start*/
 .client__container__title {
   margin-bottom: 50px;
+  font-size: 28px;
+}
+
+@media (min-width: 1280px) {
+  .client__container__title {
+    font-size: 36px;
+  }
 }
 
 .client__list {
   justify-items: center;
-  --item: 2;
+  --item: 1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (min-width: 480px) {
+  .client__list {
+    --item: 2;
+  }
 }
 
 @media (min-width: 768px) {
   .client__list {
     --item: 3;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -760,7 +806,13 @@ body {
 /*  block Footer start*/
 .footer {
   background: var(--third-bg-cl);
-  padding: 60px;
+  padding: 15px;
+}
+
+@media (min-width: 480px) {
+  .footer {
+    padding: 60px;
+  }
 }
 
 .footer__container {
@@ -804,6 +856,13 @@ body {
 
 .footer .font-3 {
   color: var(--secondary-txt-cl);
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .footer .font-3 {
+    font-size: 26px;
+  }
 }
 
 .footer__logo {
@@ -963,7 +1022,7 @@ body {
   outline: transparent;
   padding: 15px 16px;
   background-color: transparent;
-  min-width: 450px;
+  min-width: 70vw;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--main-bg-cl);
@@ -1086,9 +1145,20 @@ body {
 
 .modal {
   position: relative;
-  width: 528px;
   min-height: 250px;
   background-color: var(--main-bg-cl);
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__form {
@@ -1159,6 +1229,7 @@ body {
 }
 
 .modal__form__message {
+  outline: transparent;
   width: 100%;
   padding-top: 12px;
   padding-left: 16px;
@@ -1252,6 +1323,16 @@ body {
   border-radius: 4px;
 }
 
+.modal__form__agrement__text {
+  font-size: 12px;
+}
+
+@media (min-width: 1280px) {
+  .modal__form__agrement__text {
+    font-size: 14px;
+  }
+}
+
 .test__label {
   color: blue;
 }
@@ -1277,7 +1358,7 @@ body {
 }
 
 .modal__menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1386,6 +1467,7 @@ body {
 
 .portfolio__memu__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .portfolio__memu__item:last-child {
@@ -1463,9 +1545,16 @@ body {
   --animation-property: box-shadow;
 }
 
+.portfolio__repeater__item__link {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 294px 1fr;
+      grid-template-rows: 294px 1fr;
+}
+
 .portfolio__repeater__item__link:hover,
 .portfolio__repeater__item__link:active {
-  display: block;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }

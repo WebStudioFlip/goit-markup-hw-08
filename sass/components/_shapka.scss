@@ -1,55 +1,69 @@
 /* block shapka start*/
 
-.shapka {      
-  background-image: var(--linear-gradient),url(../images/activity/img.jpg);   
-  background-size: contain; 
-  background-color: var(--third-bg-cl);
+.shapka {
   padding-top: 118px;
   padding-bottom: 118px;
 
-    @include mq(tablet) {
-      padding-top: 118px;
-      padding-bottom: 118px;
-    }
+  background-size: contain;
+  background-color: var(--third-bg-cl);
 
-    @include mq(desktop) {      
-      padding-top: 200px;
-      padding-bottom: 200px;
+  background-image: var(--linear-gradient), url(../images/hero/bg-img_sm.jpg);
+  @include mq(retina) {
+    background-image: var(--linear-gradient),
+      url(../images/hero/bg-img_sm@2x.jpg);
+  }
+
+  @include mq(tablet) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_md.jpg);
+    @include mq(retina) {
+      background-image: var(--linear-gradient),
+        url(../images/hero/bg-img_md@2x.jpg);
     }
   }
-  
-  .shapka__container { 
-    text-align: center;
-  
+
+  @include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: var(--linear-gradient), url(../images/hero/bg-img_lg.jpg);
+    @include mq(retina) {
+      background-image: var(--linear-gradient),
+        url(../images/hero/bg-img_lg@2x.jpg);
+    }
   }
-  
-  .shapka .font-1 { 
-    display: inline-block;  
-    max-width: 696px;   
-    text-transform: uppercase;  
-    color: var(--main-bg-cl);
+}
+
+.shapka__container {
+  text-align: center;
+}
+
+.shapka .font-1 {
+  display: inline-block;
+  max-width: 696px;
+  text-transform: uppercase;
+  color: var(--main-bg-cl);
+  font-size: 26px;
+  max-width: 360px;
+  @include mq(tablet) {
     font-size: 26px;
     max-width: 360px;
-    @include mq(tablet) {
-      font-size: 26px;
-      max-width: 360px;
-    }
-
-    @include mq(desktop) {      
-      font-size: 44px;
-      max-width: 700px;
-    }
-
   }
-  
-  .shapka__container .btn-action { 
-    display: block;   
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    padding: 10px 32px;    
-   }
-  
-  
-  
-  /* block shapka finish*/
+
+  @include mq(desktop) {
+    font-size: 44px;
+    max-width: 700px;
+  }
+}
+
+.shapka__container .btn-action {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+}
+
+/* block shapka finish*/

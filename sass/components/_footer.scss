@@ -3,7 +3,10 @@
 
 .footer {    
     background: var(--third-bg-cl);
-    padding: 60px;
+    padding: 15px;
+    @include mq(mobile) {
+      padding: 60px;
+    }
   } 
   
   .footer__container { 
@@ -31,6 +34,10 @@
   
   .footer .font-3 {    
     color: var(--secondary-txt-cl);
+    font-size: 24px; 
+      @include mq(desktop) {
+        font-size: 26px;  
+      }
   }
   
   .footer__logo {   
@@ -162,7 +169,7 @@
       outline: transparent;
       padding: 15px 16px;
       background-color: transparent;
-      min-width: 450px;    
+      min-width: 70vw;    
       min-height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       color: var(--main-bg-cl);

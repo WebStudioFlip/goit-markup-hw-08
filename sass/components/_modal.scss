@@ -22,10 +22,17 @@
   }
   
   .modal { 
-    position: relative;  
-    width: 528px;
+    position: relative; 
     min-height: 250px;
-    background-color: var(--main-bg-cl) ;
+    background-color: var(--main-bg-cl) ; 
+    @include mq(mobile) {
+      width: 450px;    
+    }
+    
+    @include mq(desktop) {
+      width: 528px;     
+    }
+   
   }
   
   .modal__form {
@@ -95,6 +102,7 @@
     }  
   
     .modal__form__message {
+      outline: transparent;
       width: 100%;
       padding-top: 12px;
       padding-left: 16px;
@@ -162,6 +170,14 @@
     border-radius: 4px;
   }
   
+  .modal__form__agrement__text {
+    font-size: 12px; 
+      @include mq(desktop) {
+        font-size: 14px;  
+      }
+  }
+ 
+
   .test__label {
     color: blue;
     }

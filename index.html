@@ -55,7 +55,7 @@
         </li>
       </ul>
       <button class="mobile__menu__open  animation-1" type="button" data-modal-menu-open>
-        <svg class="svg mobile__menu__open__svg" width="40" ; height="40" ;>
+        <svg class="svg mobile__menu__open__svg" width="40" height="40">
           <use href="./images/icons.svg#icon-menu_40px"></use>
         </svg>
       </button>
@@ -67,8 +67,8 @@
     <section class="shapka section">
       <div class="container shapka__container">
         <h1 class="font-1">Эффективные решения для вашего бизнеса</h1>
-        <button class="btn btn-action animation-1" type="button" data-modal-open>
-          <p class="font-4"> Заказать услугу</p>
+        <button class="btn btn-action animation-1 font-4" type="button" data-modal-open>
+          Заказать услугу
         </button>
       </div>
     </section>
@@ -149,7 +149,22 @@
         <h2 class="font-2">Наша команда</h2>
         <ul class="list team__list grid">
           <li class="team__list__item">
-            <img class="image" src="./images/team/igor.jpg" alt="Мужчина в бордовой рубашке">
+            <picture>
+              <source 
+              media="(min-width: 1280px)"
+              srcset="./images/team/img_lg.jpg 1x, ./images/team/img@2x_lg.jpg 2x">
+              <source 
+              media="(min-width: 768px)"
+              srcset="./images/team/img_md.jpg 1x, ./images/team/img@2x_md.jpg 2x">
+              <img class="image"               
+              srcset="./images/team/img_sm.jpg 1x, ./images/team/img@2x_sm.jpg 2x"
+              
+              src="./images/team/img_sm.jpg"
+              alt="Мужчина в бордовой рубашке" 
+              width="270"
+              loading="lazy">
+            </picture>
+           
             <div class="team__list__item__info">
               <h3 class="team__list__item__title font-5">Игорь Демьяненко</h3>
               <p class="team__list__item__text font-6">Product Designer</p>
@@ -186,7 +201,7 @@
             </div>
           </li>
           <li class="team__list__item">
-            <img class="image" src="./images/team/olga.jpg" alt="Девушка в пиджаке">
+            <img class="image" src="./images/team/olga.jpg" alt="Девушка в пиджаке" width="270">
             <div class="team__list__item__info">
               <h3 class="team__list__item__title font-5">Ольга Репина</h3>
               <p class="team__list__item__text font-6">Frontend Developer</p>
@@ -224,7 +239,7 @@
 
           </li>
           <li class="team__list__item">
-            <img class="image" src="./images/team/niko.jpg" alt="Мужчина в голубой рубашке">
+            <img class="image" src="./images/team/niko.jpg" alt="Мужчина в голубой рубашке" width="270">
             <div class="team__list__item__info">
               <h3 class="team__list__item__title font-5">Николай Тарасов</h3>
               <p class="team__list__item__text font-6">Marketing</p>
@@ -262,7 +277,7 @@
 
           </li>
           <li class="team__list__item">
-            <img class="image" src="./images/team/miho.jpg" alt="Мужчина в черной футболке">
+            <img class="image" src="./images/team/miho.jpg" alt="Мужчина в черной футболке" width="270">
             <div class="team__list__item__info">
               <h3 class="team__list__item__title font-5">Михаил Ермаков</h3>
               <p class="team__list__item__text font-6">UI Designer</p>
@@ -462,13 +477,14 @@
         <div class="modal__form__agrement">
           <input class="modal__form__agrement__checkbox visually-hidden" type="checkbox" id="agrement__checkbox"
             name="checkbox">
-          <label class="modal__form__agrement__label box-flex" for="agrement__checkbox">
-            <svg class="modal__form__agrement__checkbox-input__icon" width="16" ; height="15">
+            <p class="modal__form__agrement__text font-8"><label class="modal__form__agrement__label box-flex" for="agrement__checkbox">
+            <svg class="modal__form__agrement__checkbox-input__icon" width="16" height="15">
               <use href="./images/icons.svg#icon-checkbox"></use>
             </svg>
-            <p class="modal__form__agrement__text font-8">Соглашаюсь с рассылкой и принимаю&nbsp; </p>
+            Соглашаюсь с рассылкой и принимаю&nbsp; 
             <a class="modal__form__agrement__link font-8" href="">Условия договора</a>
           </label>
+        </p>
         </div>
         <button class="modal__form__btn-send btn-action btn animation-1" type="submit">
           <p class="font-4">Отправить</p>

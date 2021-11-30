@@ -217,7 +217,9 @@ body {
   
   .image {
     display: block; 
-    object-fit: cover;
+    /* object-fit: cover; */
+    height: auto;
+    max-width: 100%;
   }
   
   .svg { 
