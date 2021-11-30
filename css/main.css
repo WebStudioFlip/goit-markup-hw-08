@@ -428,7 +428,7 @@ body {
 .shapka {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-size: contain;
+  background-size: cover;
   background-color: var(--third-bg-cl);
   background-image: var(--linear-gradient), url(../images/hero/bg-img_sm.jpg);
 }
@@ -898,9 +898,7 @@ body {
   --animation-property: color;
 }
 
-.footer__address__contact__item .link:hover,
-.footer__address__contact__item .link:active,
-.footer__address__contact__item .link:focus {
+.footer__address__contact__item .link:hover, .footer__address__contact__item .link:active, .footer__address__contact__item .link:focus {
   color: var(--secondary-txt-cl);
 }
 

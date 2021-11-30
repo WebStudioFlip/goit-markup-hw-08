@@ -4,8 +4,8 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  background-size: contain;
-  background-color: var(--third-bg-cl);
+  background-size: cover;
+  background-color: var(--third-bg-cl);  
 
   background-image: var(--linear-gradient), url(../images/hero/bg-img_sm.jpg);
   @include mq(retina) {

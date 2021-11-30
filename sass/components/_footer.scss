@@ -74,13 +74,14 @@
   .footer__address__contact__item .link {  
     color: rgba(255, 255, 255, 0.6); 
     --animation-property: color;
+    &:hover,
+    &:active,
+    &:focus { 
+      color: var(--secondary-txt-cl);
+    }
    }
   
-  .footer__address__contact__item .link:hover,
-  .footer__address__contact__item .link:active,
-  .footer__address__contact__item .link:focus { 
-    color: var(--secondary-txt-cl);
-  }
+  
   
   .footer__social {   
     margin-left: auto;
