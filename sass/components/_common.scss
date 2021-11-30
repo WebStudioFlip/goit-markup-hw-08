@@ -11,6 +11,12 @@ body {
     padding: 0;
   }
   
+  img {
+    display: block;     
+    height: auto;
+    max-width: 100%;
+  }
+
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -214,14 +220,7 @@ body {
     background-color: var(--btn-bg-secondary-cl);  
   }
   }
-  
-  .image {
-    display: block; 
-    /* object-fit: cover; */
-    height: auto;
-    max-width: 100%;
-  }
-  
+    
   .svg { 
     display: inline-block;  
      background-color: transparent;  

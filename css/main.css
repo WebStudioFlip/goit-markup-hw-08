@@ -41,6 +41,12 @@ body {
   padding: 0;
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -251,13 +257,6 @@ body {
 
 .btn-action:hover, .btn-action:focus {
   background-color: var(--btn-bg-secondary-cl);
-}
-
-.image {
-  display: block;
-  /* object-fit: cover; */
-  height: auto;
-  max-width: 100%;
 }
 
 .svg {
@@ -1629,11 +1628,6 @@ body {
   border-bottom: 2px solid #EEEEEE;
   border-left: 2px solid #EEEEEE;
   border-right: 2px solid #EEEEEE;
-}
-
-.portfolio__repeater__item .image {
-  width: 370px;
-  height: 294px;
 }
 
 .portfolio .font-12 {
