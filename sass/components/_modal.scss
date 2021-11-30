@@ -87,7 +87,7 @@
       
     }
   
-    .modal__form__label:not(:first-child) {
+    .modal__form .font-10:not(:first-child) {
       margin-top: 10px;
     }
   
@@ -154,7 +154,7 @@
   }
   
   .modal__form__agrement__link { 
-    color: var();
+    color: var(--secondary-txt-cl);
   }
   
   .modal__form__btn-send {   

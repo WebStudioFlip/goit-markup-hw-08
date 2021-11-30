@@ -1198,7 +1198,7 @@ body {
   position: relative;
 }
 
-.modal__form__label:not(:first-child) {
+.modal__form .font-10:not(:first-child) {
   margin-top: 10px;
 }
 
@@ -1292,7 +1292,7 @@ body {
 }
 
 .modal__form__agrement__link {
-  color: var();
+  color: var(--secondary-txt-cl);
 }
 
 .modal__form__btn-send {
@@ -1513,6 +1513,9 @@ body {
   padding-top: 6px;
   padding-bottom: 6px;
   color: var(--main-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
   background-color: var(--secondary-bg-cl);
   border-width: 0px;
   border-radius: var(--border-radius);
