@@ -40,11 +40,14 @@
     padding: 40px;
   }
   
+  .modal__form__label:focus .modal__form__input,
+  .modal__form__label:hover .modal__form__input,
   .modal__form__label:focus-within .modal__form__input,
-    .modal__form__label:focus-visible .modal__form__input{
+  .modal__form__label:focus-visible .modal__form__input{
       border-color: var(--secondary-txt-cl);       
     }  
-  
+    .modal__form__label:focus .modal__form__icon,
+    .modal__form__label:hover .modal__form__icon,
     .modal__form__label:focus-within .modal__form__icon,
     .modal__form__label:focus-visible .modal__form__icon{      
       fill: var(--secondary-txt-cl);   
@@ -121,6 +124,8 @@
   resize: none;
     }
   
+    .modal__form__message:hover,
+    .modal__form__message:focus,
     .modal__form__message:focus-within,
     .modal__form__message:focus-visible {
       border: 1px solid var(--secondary-txt-cl);
