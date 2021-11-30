@@ -372,7 +372,6 @@ img {
 
 @media (min-width: 768px) {
   .header__contact {
-    margin-left: 88px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -386,12 +385,18 @@ img {
 
 @media (min-width: 1280px) {
   .header__contact {
-    margin-left: 93px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+.header__contact__item:first-child {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1280px) {
+  .header__contact__item:first-child {
+    margin-bottom: 0;
   }
 }
 

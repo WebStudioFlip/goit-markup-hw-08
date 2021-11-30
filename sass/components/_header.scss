@@ -70,20 +70,24 @@
       margin-left: auto;
       --margin-element:50px;
 
-      @include mq(tablet) {
-        margin-left: 88px;
+      @include mq(tablet) {        
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start
       }
   
-      @include mq(desktop) {
-        margin-left: 93px;
-       display: flex;
-       flex-wrap: nowrap;
+      @include mq(desktop) {  
+        flex-wrap: nowrap;
       }
     }
     
+    .header__contact__item:first-child {
+      margin-bottom: 10px ;
+      @include mq(desktop) {  
+        margin-bottom: 0;
+      }
+    }
+
     .header__contact__item .link{   
       color: var(--third-txt-cl);  
       --animation-property: color, fill  
