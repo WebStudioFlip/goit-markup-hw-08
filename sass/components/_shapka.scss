@@ -41,17 +41,12 @@
 }
 
 .shapka .font-1 {
-  display: inline-block;
-  max-width: 696px;
+  display: inline-block;  
   text-transform: uppercase;
   color: var(--main-bg-cl);
   font-size: 26px;
   max-width: 360px;
-  @include mq(tablet) {
-    font-size: 26px;
-    max-width: 360px;
-  }
-
+  
   @include mq(desktop) {
     font-size: 44px;
     max-width: 700px;
