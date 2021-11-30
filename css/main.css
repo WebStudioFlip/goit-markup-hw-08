@@ -1305,7 +1305,7 @@ body {
   margin-right: auto;
 }
 
-.modal__form__agrement__checkbox:checked + .modal__form__agrement__label .modal__form__agrement__checkbox-input__icon {
+.modal__form__agrement__checkbox:checked + .modal__form__agrement__text .modal__form__agrement__checkbox-input__icon {
   fill: var(--secondary-txt-cl);
 }
 
