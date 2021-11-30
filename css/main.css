@@ -1192,6 +1192,7 @@ body {
   width: 10px;
   height: 10px;
   padding: 0;
+  --animation: fill;
 }
 
 .modal__form__label {

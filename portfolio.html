@@ -23,9 +23,17 @@
       <a class="link font-3" href="./index.html">Web<span class="header__logo">Studio</span></a>
       <nav class="header__navigation ">
         <ul class="header__navigation__list list box-flex font-7 ">
-          <li class="header__navigation__list__item position-items"><a class="link animation-1" href="./index.html"> <p> Студия</p></a></li>
-          <li class="header__navigation__list__item position-items"><a class="link  animation-1 current-page" href="./portfolio.html"> <p> Портфолио</p></a></li>
-          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href=""><p>Контакты</p></a></li>
+          <li class="header__navigation__list__item position-items"><a class="link animation-1"
+              href="./index.html">
+              <p> Студия</p>
+            </a></li>
+          <li class="header__navigation__list__item position-items"><a class="link  animation-1 current-page"
+              href="./portfolio.html">
+              <p> Портфолио</p>
+            </a></li>
+          <li class="header__navigation__list__item position-items"><a class="link  animation-1" href="">
+              <p>Контакты</p>
+            </a></li>
         </ul>
       </nav>
       <ul class="header__contact list box-flex font-7">
@@ -34,18 +42,27 @@
             <svg class="svg animation-1" style="width: 16px; height:16px;">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <p>info@devstudio.com</p></a>
+            <p>info@devstudio.com</p>
+          </a>
         </li>
         <li class="header__contact__item position-items ">
           <a class="link tel animation-1 box-flex" href="tel:+380961111111">
             <svg class="svg animation-1" style="width: 16px; height:16px;">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <p>+38 096 111 11 11</p></a>
+            <p>+38 096 111 11 11</p>
+          </a>
         </li>
       </ul>
+      <button class="mobile__menu__open  animation-1" type="button" data-modal-menu-open>
+        <svg class="svg mobile__menu__open__svg" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+
     </div>
   </header>
+
 
     <main class="main">
         <section class="portfolio section">
@@ -327,14 +344,16 @@
 
     <footer class="footer">
       <div class="footer__container container box-flex">
-        <div>
+        <div class="footer__container__logo">
           <a class="link font-3" href="/index.html">Web<span class="footer__logo">Studio</span></a>
   
           <address class="footer__address font-8">
             г. Киев, пр-т Леси Украинки, 26
             <ul class="list footer__address__contact__list">
-              <li class="footer__address__contact__item"><a class="link animation-1" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="footer__address__contact__item"><a class="link animation-1" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="footer__address__contact__item"><a class="link animation-1"
+                  href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="footer__address__contact__item"><a class="link animation-1" href="tel:+380961111111">+38 096 111
+                  11 11</a></li>
             </ul>
           </address>
         </div>
@@ -372,15 +391,18 @@
             </li>
           </ul>
         </div>
+  
         <div class="footer__subscription">
           <form class="subscription__form box-flex" name="subscription-form" autocomplete="on">
             <div class="subscription__form__box">
-              <p class="subscription__form__box__title font-9">подпишитесь на рассылку</p>
-              <label for="user_email"></label>
-              <input class="subscription__form__input" type="email" name="email" id="user_email" placeholder="E-mail">
+              <p class="subscription__form__box__title font-9">
+              <label for="subscription__user_email">
+                подпишитесь на рассылку
+              </label></p>
+              <input class="subscription__form__input" type="email" name="email" id="subscription__user_email" placeholder="E-mail">
             </div>
-            <button class="btn btn-action subscription__form__btn  animation-1 box-flex" type="submit">
-              <p class="font-4">Подписаться</p>
+            <button class="btn btn-action subscription__form__btn  animation-1 box-flex font-4" type="submit">
+             Подписаться
               <svg class="sibscription__form__svg svg">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
@@ -390,6 +412,46 @@
         </div>
       </div>
     </footer>
+    <div class="modal__menu is-visible box-flex" data-modal-menu>
+      <button class="modal__menu__btn__close" type="button" data-modal-menu-close>
+        <svg class="modal__menu__button-close__icon animation-1" width="18" height="18">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="modal__menu__navigation list font-7 ">
+        <li class="modal__menu__navigation__item"><a class="link animation-1 current-page" href="./index.html">
+            <p class="font-5"> Студия</p>
+          </a></li>
+        <li class="modal__menu__navigation__item"><a class="link  animation-1" href="./portfolio.html">
+            <p class="font-5"> Портфолио</p>
+          </a></li>
+        <li class="modal__menu__navigation__item"><a class="link  animation-1" href="">
+            <p class="font-5">Контакты</p>
+          </a></li>
+      </ul>
+      <ul class="modal__menu__contact list font-7">
+        <li class="modal__menu__contact__item">
+          <a class="modal__menu__contact__item__tel link tel animation-1 box-flex" href="tel:+380961111111">
+            <p class="font-5">+38 096 111 11 11</p>
+          </a>
+        </li>
+        <li class="modal__menu__contact__item">
+          <a class="modal__menu__contact__item__email link email animation-1 box-flex" href="mailto:info@devstudio.com">
+            <p class="font-7">info@devstudio.com</p>
+          </a>
+        </li>      
+        <li class="modal__menu__contact__item">
+          <ul class="modal__menu__contact__social list box-flex">
+            <li class="modal__menu__contact__social__item link"><a class="link" href="">Instagram</a></li>
+            <li class="modal__menu__contact__social__item link"><a class="link" href="">Twitter</a></li>
+            <li class="modal__menu__contact__social__item link"><a class="link" href="">Facebook</a></li>
+            <li class="modal__menu__contact__social__item link"><a class="link" href="">LinkedIn</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>  
+    
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
