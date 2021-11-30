@@ -72,19 +72,24 @@
 
       @include mq(tablet) {        
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
       }
   
-      @include mq(desktop) {  
+      @include mq(desktop) { 
+        flex-direction: row; 
         flex-wrap: nowrap;
       }
     }
     
     .header__contact__item:first-child {
       margin-bottom: 10px ;
+      margin-right: 0;
       @include mq(desktop) {  
         margin-bottom: 0;
+        margin-right: 50px;
+        
       }
     }
 
